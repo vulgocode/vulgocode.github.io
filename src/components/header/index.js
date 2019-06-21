@@ -1,27 +1,28 @@
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
+import Media from 'react-media';
 
-import { HeaderStyles, Wrapper, Title } from './styles';
+import { Container } from '../../elements';
+import {
+  HeaderStyles, Headline, Description, WrapHeaderline,
+} from './styles';
 
-const Header = ({ siteTitle }) => (
+import HeroSvg from '../../images/hero.inline.svg';
+
+const Header = () => (
   <HeaderStyles>
-    <Wrapper>
-      <Title style={{ margin: 0 }}>
-        <Link to="/">
-          {siteTitle}
-        </Link>
-      </Title>
-    </Wrapper>
+    <Container>
+      <WrapHeaderline>
+        <Headline>sua agência web</Headline>
+        <Description>
+          Desenvolvimento de Websites, Landing Pages, Emails Marketing e muito mais!
+        </Description>
+      </WrapHeaderline>
+
+      <Media query="(min-width: 600px)">
+        {isNotMobile => isNotMobile && <HeroSvg style={{ minWith: '250px' }} />}
+      </Media>
+    </Container>
   </HeaderStyles>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: '',
-};
 
 export default Header;

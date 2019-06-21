@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "vulgocode",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Alexandre Ramos <alexandresantos84@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.1",
     "gatsby": "^2.9.11",
@@ -11,15 +11,20 @@
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.3",
     "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-react-svg": "^2.1.1",
     "gatsby-plugin-sharp": "^2.1.9",
     "gatsby-plugin-styled-components": "^3.1.0",
+    "gatsby-plugin-typography": "^2.3.0",
     "gatsby-source-filesystem": "^2.0.43",
     "gatsby-transformer-sharp": "^2.1.21",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.3.2"
+    "react-media": "^1.9.2",
+    "react-typography": "^0.16.19",
+    "styled-components": "^4.3.2",
+    "typography": "^0.16.19"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -38,11 +43,12 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "serve": "gatsby serve",
     "format": "prettier --write src/**/*.{js,jsx}",
     "lint": "eslint src/**/*.js",
     "lint:fix": "npm run lint -- --fix",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "restart": "rm -rf .cache && npm run start",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
@@ -57,10 +63,5 @@
       "npm run lint:fix",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }

@@ -1,19 +1,29 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Layout from '../components/layout';
-import Image from '../components/image';
-import SEO from '../components/seo';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-  </Layout>
-);
+import {
+  Header, Layout, SEO, Navbar,
+} from '../components';
+
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Navbar siteTitle={data.site.siteMetadata.title} />
+      <Header />
+    </Layout>
+  );
+};
 
 export default IndexPage;
