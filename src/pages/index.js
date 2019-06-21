@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 
 import {
-  Header, Layout, SEO, Navbar,
+  Header, Layout, SEO, Navbar, ServiceSection,
 } from '../components';
 
 const IndexPage = () => {
@@ -22,6 +22,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Navbar siteTitle={data.site.siteMetadata.title} />
       <Header />
+      <ServiceSection />
     </Layout>
   );
 };

@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-  margin: 0;
   padding: 0;
   height: 36px;
   width: 152px;
+  display: inline-block;
 
   border: none;
   background: ${({ theme }) => theme.colors.secundary};

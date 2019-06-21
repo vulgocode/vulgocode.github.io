@@ -16,6 +16,14 @@ const typography = new Typography({
       styles: ['400', '700'],
     },
   ],
+  overrideStyles: () => ({
+    h2: {
+      fontSize: '34px',
+    },
+    h3: {
+      fontSize: '24px',
+    },
+  }),
 });
 
 export default typography;
