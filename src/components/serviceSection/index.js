@@ -27,7 +27,11 @@ const ServiceSection = () => {
           <Card>
             <CardHeader onClick={() => open(0)}>
               <DevSites />
-              <h3>Desenvolvimento de Sites</h3>
+              <h3>
+                Desenvolvimento
+                <br />
+                de Sites
+              </h3>
             </CardHeader>
             <Panel isOpen={isOpen[0]}>
               <p>
@@ -61,7 +65,11 @@ const ServiceSection = () => {
           <Card>
             <CardHeader onClick={() => open(2)}>
               <DevApp />
-              <h3>Desenvolvimento de App</h3>
+              <h3>
+                Desenvolvimento
+                <br />
+                de App
+              </h3>
             </CardHeader>
             <Panel isOpen={isOpen[2]}>
               <p>

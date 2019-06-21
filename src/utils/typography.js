@@ -21,7 +21,7 @@ const typography = new Typography({
       fontSize: '34px',
     },
     h3: {
-      fontSize: '24px',
+      fontSize: '22px',
     },
   }),
 });

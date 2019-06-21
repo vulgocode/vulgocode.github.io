@@ -49,7 +49,7 @@
     "lint": "eslint src/**/*.js",
     "lint:fix": "npm run lint -- --fix",
     "start": "npm run develop",
-    "restart": "rm -rf .cache && npm run start",
+    "restart": "gatsby clean && npm run start",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {

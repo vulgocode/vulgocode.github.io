@@ -33,7 +33,7 @@ export const Cards = styled.ul`
 
    @media (min-width: 600px){
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   } 
 `;
 
@@ -56,6 +56,16 @@ export const CardHeader = styled.div`
   margin: 25px auto;
   position: relative;  
 
+  @media (min-width: 600px) {
+    width: 180px;
+    height: 180px; 
+  } 
+
+  @media (min-width: 680px) {
+    width: 200px;
+  height: 200px;  
+  } 
+
   &:hover ::before{
     content: '';
     position: absolute;
@@ -65,7 +75,7 @@ export const CardHeader = styled.div`
    /*  border: 0px solid #66339955; */
     box-shadow: inset 0 0 20px 0 #66339988, 0 0 10px 0 #66339944;
     
-    z-index: -1;
+    z-index: -100;
     border-radius: 20px;
    
     ${pulsarAnimation('1s', '0s')};
@@ -80,6 +90,7 @@ export const CardHeader = styled.div`
     margin-top: 10px;
     user-select: none;
   }
+
 `;
 
 
