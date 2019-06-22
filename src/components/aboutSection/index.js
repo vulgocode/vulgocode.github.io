@@ -1,12 +1,13 @@
 import React from 'react';
 import Media from 'react-media';
+import PropTypes from 'prop-types';
 
 import { Section, WrapperAbout, Title } from './styles';
 import { Container, Button } from '../../elements';
 
 import AboutSvg from '../../images/about.inline.svg';
 
-const AboutSection = () => (
+const AboutSection = ({ toggleModal }) => (
   <Section>
     <Container>
       <Media query="(min-width: 600px)">
@@ -33,10 +34,14 @@ const AboutSection = () => (
           Duis aute irure dolor in reprehenderit in voluptate velit esse
           cillum dolore eu fugiat nulla pariatur.
         </p>
-        <Button>Orçamento</Button>
+        <Button onClick={toggleModal}>Orçamento</Button>
       </WrapperAbout>
     </Container>
   </Section>
 );
+
+AboutSection.propTypes = {
+  toggleModal: PropTypes.func.isRequired,
+};
 
 export default AboutSection;

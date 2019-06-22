@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import DevSites from '../../images/website_setup.inline.svg';
 import DevApp from '../../images/order_confirmed.inline.svg';
@@ -10,7 +11,7 @@ import {
 
 import { Container, Button } from '../../elements';
 
-const ServiceSection = () => {
+const ServiceSection = ({ toggleModal }) => {
   const [isOpen, setIsOpen] = useState([true, false, false]);
 
   const open = (index) => {
@@ -42,7 +43,7 @@ const ServiceSection = () => {
                 Duis aute irure dolor in reprehenderit in voluptate velit
                 esse cillum dolore eu fugiat nulla pariatur.
               </p>
-              <Button>Orçamento</Button>
+              <Button onClick={toggleModal}>Orçamento</Button>
             </Panel>
           </Card>
           <Card>
@@ -59,7 +60,7 @@ const ServiceSection = () => {
                 Duis aute irure dolor in reprehenderit in voluptate velit
                 esse cillum dolore eu fugiat nulla pariatur.
               </p>
-              <Button>Orçamento</Button>
+              <Button onClick={toggleModal}>Orçamento</Button>
             </Panel>
           </Card>
           <Card>
@@ -80,13 +81,17 @@ const ServiceSection = () => {
                 Duis aute irure dolor in reprehenderit in voluptate velit
                 esse cillum dolore eu fugiat nulla pariatur.
               </p>
-              <Button>Orçamento</Button>
+              <Button onClick={toggleModal}>Orçamento</Button>
             </Panel>
           </Card>
         </Cards>
       </Container>
     </Section>
   );
+};
+
+ServiceSection.propTypes = {
+  toggleModal: PropTypes.func.isRequired,
 };
 
 export default ServiceSection;
