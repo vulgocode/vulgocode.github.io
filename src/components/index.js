@@ -7,6 +7,7 @@ import ServiceSection from './serviceSection';
 import AboutSection from './aboutSection';
 import ClientsSection from './clientsSection';
 import ContactSection from './contactSection';
+import Footer from './footer';
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   AboutSection,
   ClientsSection,
   ContactSection,
+  Footer,
 };

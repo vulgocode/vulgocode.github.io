@@ -10,6 +10,7 @@ import {
   AboutSection,
   ClientsSection,
   ContactSection,
+  Footer,
 } from '../components';
 
 const IndexPage = () => {
@@ -32,6 +33,7 @@ const IndexPage = () => {
       <AboutSection />
       <ClientsSection />
       <ContactSection />
+      <Footer />
     </Layout>
   );
 };
