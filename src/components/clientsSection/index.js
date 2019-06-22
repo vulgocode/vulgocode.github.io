@@ -32,19 +32,19 @@ const ClientsSection = () => (
             framePadding="50px 0px 100px"
           >
             <WrapperSlider>
-              <Img src={agred} />
+              <Img src={agred} alt="agencia red" />
             </WrapperSlider>
 
             <WrapperSlider>
-              <Img src={aroma} />
+              <Img src={aroma} alt="aroma gospel" />
             </WrapperSlider>
 
             <WrapperSlider>
-              <Img src={asiamed} />
+              <Img src={asiamed} alt="asiamed" />
             </WrapperSlider>
 
             <WrapperSlider>
-              <Img src={asiaservice} />
+              <Img src={asiaservice} alt="asiaservice" />
             </WrapperSlider>
           </Carousel>
         )}

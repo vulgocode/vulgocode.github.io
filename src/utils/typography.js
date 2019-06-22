@@ -8,8 +8,6 @@ const typography = new Typography({
   bodyFontFamily: ['Monteserrat', 'sans-serif'],
   headerGray: 50,
   headerGrayHue: 'warn',
-  bodyGray: 50,
-  bodyGrayHue: 'slate',
   googleFonts: [
     {
       name: 'Roboto',

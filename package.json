@@ -45,7 +45,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve -p 7000",
     "format": "prettier --write src/**/*.{js,jsx}",
@@ -54,7 +54,7 @@
     "start": "npm run develop",
     "restart": "gatsby clean && npm run start",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "npm run build --prefix-paths && gh-pages -d public --branch master"
   },
   "repository": {
     "type": "git",
