@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 
 import {
@@ -56,14 +57,14 @@ const IndexPage = () => {
           Envie um email ou chama no Whatsapp para receber um orçamento
           <strong> gratuito</strong>
         </h3>
-        <a href="mailto:alexandresantos84@gmail" target="_blank" rel="noopener noreferrer">
+        <OutboundLink href="mailto:alexandresantos84@gmail" target="_blank" rel="noopener noreferrer">
           <Button email>Email</Button>
-        </a>
-        <a href="https://wa.me/5511977185120?text=Eu%20quero%20um%20orçamento" target="_blank" rel="noopener noreferrer">
+        </OutboundLink>
+        <OutboundLink href="https://wa.me/5511977185120?text=Eu%20quero%20um%20orçamento" target="_blank" rel="noopener noreferrer">
           <Button wp>
             Whatsapp
           </Button>
-        </a>
+        </OutboundLink>
       </Modal>
     </Layout>
   );
