@@ -18,12 +18,12 @@ export const Button = styled.button`
   transition: transform 400ms ease, box-shadow 400ms ease;
 
   user-select: none;
- 
-  &:focus{
+
+  &:focus {
     outline: none;
   }
 
-  &:hover{
+  &:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }

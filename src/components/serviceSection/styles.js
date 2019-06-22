@@ -38,9 +38,10 @@ export const Cards = styled.ul`
 `;
 
 export const Card = styled.li`
-  /* @media (min-width: 600px){
-    display: flex;
-  } */
+/* fix posisition absolute of panel */
+  @media (min-width: 600px){
+      margin-bottom: 160px;
+    } 
   
 `;
 
@@ -108,7 +109,7 @@ export const Panel = styled.div`
   
  ${({ isOpen }) => (isOpen && css`
  transition: all 400ms linear;
-  max-height: 300px;
+  max-height: 400px;
   padding: 20px;  
  `)};
 
@@ -117,9 +118,7 @@ export const Panel = styled.div`
   padding: 20px;
   position: absolute;
   left: 0; 
-  display:  ${({ isOpen }) => (isOpen ? 'block' : 'none')};
-
- 
+  display:  ${({ isOpen }) => (isOpen ? 'block' : 'none')}; 
 }
 
   & > ${Button}{

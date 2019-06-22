@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 
-export const HeaderStyles = styled.header``;
+import { Container } from '../../elements';
+
+export const HeaderStyles = styled.header`
+  > ${Container}{
+    display: flex;
+    justify-content: space-between;
+  }
+`;
 
 export const Headline = styled.h2`
   font-size: 64px;

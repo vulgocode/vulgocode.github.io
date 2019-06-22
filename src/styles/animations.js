@@ -28,5 +28,5 @@ const pulsar = keyframes`
 `;
 
 export const pulsarAnimation = (length, delay) => css`
-     animation: ${pulsar} ${length} ${delay} linear infinite;
+  animation: ${pulsar} ${length} ${delay} linear infinite;
 `;

@@ -1,9 +1,13 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-
 import {
-  Header, Layout, SEO, Navbar, ServiceSection,
+  Header,
+  Layout,
+  SEO,
+  Navbar,
+  ServiceSection,
+  AboutSection,
 } from '../components';
 
 const IndexPage = () => {
@@ -23,6 +27,7 @@ const IndexPage = () => {
       <Navbar siteTitle={data.site.siteMetadata.title} />
       <Header />
       <ServiceSection />
+      <AboutSection />
     </Layout>
   );
 };
