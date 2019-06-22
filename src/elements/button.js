@@ -2,33 +2,34 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   padding: 0;
-  height: 36px;
-  width: 152px;
+  height: ${({ ghost }) => (ghost ? '47px' : '36px')};
+  width: ${({ ghost }) => (ghost ? '200px' : '152px')};
   display: inline-block;
 
-  border: none;
-  background: ${({ theme }) => theme.colors.secundary};
+  border: ${({ ghost, theme }) => (ghost ? `2px solid ${theme.colors.primary}` : 'none')};
+  background: ${({ ghost, theme }) => (ghost ? 'transparent' : theme.colors.secundary)};
   border-radius: 36px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 
-  text-transform: capitalize;
-  color: ${({ theme }) => theme.colors.white};
+
+  text-transform: inherit;
+  color: ${({ theme, ghost }) => (ghost ? theme.colors.primary : theme.colors.white)};
 
   transform: translateY(0);
   transition: transform 400ms ease, box-shadow 400ms ease;
 
   user-select: none;
 
-  &:focus {
+    &:focus {
     outline: none;
   }
 
-  &:hover {
+    &:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
 
-  &:active {
+    &:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   }
