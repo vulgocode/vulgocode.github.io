@@ -3,6 +3,7 @@ module.exports = {
     title: 'Vulgocode',
     description: 'agencia vulgocode',
     author: '@alexandrer_stos',
+    siteUrl: 'https://vulgocode.github.io',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -31,27 +32,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'Vulgocode Agency Web',
-        short_name: 'vulgocode',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-    {
-      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-      options: {
-        production: true,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-142577313-1',
@@ -75,5 +55,28 @@ module.exports = {
         // cookieDomain: 'vulgocode.github.io',
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Vulgocode Agency Web',
+        short_name: 'vulgocode',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+      options: {
+        production: true,
+      },
+    },
+
   ],
 };
