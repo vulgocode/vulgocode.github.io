@@ -1,9 +1,8 @@
 import React from 'react';
 import Media from 'react-media';
+
 import { Section, WrapperAbout, Title } from './styles';
-
 import { Container, Button } from '../../elements';
-
 
 import AboutSvg from '../../images/about.inline.svg';
 

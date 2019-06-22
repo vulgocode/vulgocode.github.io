@@ -8,6 +8,7 @@ import {
   Navbar,
   ServiceSection,
   AboutSection,
+  ClientsSection,
 } from '../components';
 
 const IndexPage = () => {
@@ -28,6 +29,7 @@ const IndexPage = () => {
       <Header />
       <ServiceSection />
       <AboutSection />
+      <ClientsSection />
     </Layout>
   );
 };
