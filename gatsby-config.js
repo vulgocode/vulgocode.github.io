@@ -33,8 +33,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Vulgocode Agency Web',
+        short_name: 'vulgocode',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
@@ -48,7 +48,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-webpack-bundle-analyzer',
       options: {
-        analyzerPort: 9000,
         production: true,
       },
     },

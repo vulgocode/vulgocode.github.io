@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import Media from 'react-media';
 import PropTypes from 'prop-types';
@@ -21,18 +22,10 @@ const AboutSection = ({ toggleModal }) => (
           code
         </Title>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur.
+          A Vulgocode é uma Agência web completa, com o propósito de fornecer serviços voltados a internet.
+          A ideia de ter cada projeto como único, através de briefings bem elaborados e o entendimento do negócio de nosso cliente. Uma agência focada na criação de sites e ferramentas de webmarketing que tornem o seu site rentável para o seu negócio e atraente para a internet e os seus potenciais clientes.
+          <br />
+          Além da criação de sites e da criação de blogs personalizados, o que nos torna uma agência Web completa é o nosso leque de Serviços voltados para o seu site, como Consultoria em Google Ads (Links patrocinados) e SEO - Otimização de sites.
         </p>
         <Button onClick={toggleModal}>Orçamento</Button>
       </WrapperAbout>

@@ -109,7 +109,7 @@ export const Panel = styled.div`
   
  ${({ isOpen }) => (isOpen && css`
  transition: all 400ms linear;
-  max-height: 400px;
+  max-height: 600px;
   padding: 20px;  
  `)};
 

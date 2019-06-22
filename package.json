@@ -46,7 +46,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve -p 7000",
     "format": "prettier --write src/**/*.{js,jsx}",
     "lint": "eslint src/**/*.js",
     "lint:fix": "npm run lint -- --fix",
