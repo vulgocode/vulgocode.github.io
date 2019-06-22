@@ -71,6 +71,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     {
       resolve: 'gatsby-plugin-webpack-bundle-analyzer',
       options: {
