@@ -2,9 +2,11 @@ import styled, { css } from 'styled-components';
 
 export const Button = styled.button`
   padding: 0;
-  height: ${({ ghost }) => (ghost ? '47px' : '36px')};
-  width: ${({ ghost }) => (ghost ? '200px' : '152px')};
+  height: ${({ ghost }) => (ghost ? '67px' : '44px')};
+  width: ${({ ghost }) => (ghost ? '220px' : '182px')};
   display: inline-block;
+ 
+
 
   border: ${({ ghost, theme }) => (ghost ? `2px solid ${theme.colors.primary}` : 'none')};
   background: ${({ ghost, theme, email }) => (

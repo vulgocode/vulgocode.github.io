@@ -6,7 +6,7 @@ const colors = {
   gray: '#ccc',
 
   primary: '#663399',
-  secundary: '#009688',
+  secundary: '#005C4F', // #009688,
 };
 
 const theme = {

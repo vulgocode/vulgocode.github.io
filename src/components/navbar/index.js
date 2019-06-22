@@ -11,7 +11,7 @@ const Navbar = ({ toggleModal }) => (
         Vulgo
         <span>code</span>
       </Logo>
-      <Button onClick={toggleModal}>orçamento</Button>
+      <Button onClick={toggleModal}>Orçamento</Button>
     </Container>
   </HeaderStyles>
 );
