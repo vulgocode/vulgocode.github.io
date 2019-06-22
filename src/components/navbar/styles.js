@@ -12,7 +12,7 @@ export const HeaderStyles = styled.div`
 
 
 export const Logo = styled.p`
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.white};
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -20,5 +20,9 @@ export const Logo = styled.p`
 
     > span {
       font-weight: 400;
+    }
+
+    @media (min-width: 600px) {
+      color: ${({ theme }) => theme.colors.primary};
     }
 `;

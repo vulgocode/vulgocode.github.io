@@ -3,18 +3,19 @@ import { rotateAnimation } from './animations';
 
 export default createGlobalStyle`
     html {
-  line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   background-color: #ffffff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   }
   body {
     margin: 0;
+  
   }
   main {
     display: block;
   }
-  h1 {
-    font-size: 2em;
+  h1 {    
     margin: 0.67em 0;
   }
   hr {

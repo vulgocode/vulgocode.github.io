@@ -5,11 +5,13 @@ import { Container } from '../../elements';
 import {
   HeaderStyles, Headline, Description, WrapHeaderline,
 } from './styles';
+import Navbar from '../navbar';
 
 import HeroSvg from '../../images/hero.inline.svg';
 
 const Header = () => (
   <HeaderStyles>
+    <Navbar />
     <Container>
       <WrapHeaderline>
         <Headline>sua agência web</Headline>

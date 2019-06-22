@@ -2,10 +2,14 @@ import Typography from 'typography';
 
 const typography = new Typography({
   baseFontSize: '16px',
-  baseLineHeight: 1.666,
+  baseLineHeight: 1.6,
   scaleRatio: 2,
   headerFontFamily: ['Roboto', 'sans-serif'],
   bodyFontFamily: ['Monteserrat', 'sans-serif'],
+  headerGray: 50,
+  headerGrayHue: 'warn',
+  bodyGray: 50,
+  bodyGrayHue: 'slate',
   googleFonts: [
     {
       name: 'Roboto',
@@ -22,6 +26,9 @@ const typography = new Typography({
     },
     h3: {
       fontSize: '22px',
+    },
+    body: {
+
     },
   }),
 });

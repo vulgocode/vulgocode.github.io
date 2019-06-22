@@ -3,12 +3,26 @@ import styled from 'styled-components';
 import { Container, Button } from '../../elements';
 
 export const Section = styled.section`
-padding: 50px 0 0 0;
+
+background: ${({ theme }) => theme.colors.bgLight};
 
    > ${Container}{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  } 
+
+  &::before {
+    content:'';
+    width: 100vw;
+    height: 10vw;
+    display: block;  
+    overflow: hidden;
+  }
+
+  &::before {
+    border-radius: 0% 0% 5% 100%;
+    background: ${({ theme }) => theme.colors.white};
   } 
 `;
 
@@ -27,6 +41,12 @@ export const Title = styled.h2`
   position: relative;
   font-weight: 400;
   width: max-content;
+  margin: 30px auto 50px;
+
+  @media (min-width: 600px) {
+    margin: 30px auto 50px 0;
+  }
+  
 
   > span {
     font-weight: 700;

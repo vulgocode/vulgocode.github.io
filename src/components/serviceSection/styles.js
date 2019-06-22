@@ -4,14 +4,14 @@ import { Button } from '../../elements';
 import { pulsarAnimation } from '../../styles/animations';
 
 export const Section = styled.section`
-  padding: 50px 0 0 0;
+  padding: 100px 0 50px;
 `;
 
 export const Title = styled.h2`
   text-align: center;
   position: relative;
   width: max-content;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 
   &::after{
     content: '';

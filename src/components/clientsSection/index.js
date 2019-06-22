@@ -29,7 +29,7 @@ const ClientsSection = () => (
             slidesToShow={!isNotMobile ? 2 : 3}
             initialSlideHeight={100}
             withoutControls
-            framePadding="50px 0px"
+            framePadding="50px 0px 100px"
           >
             <WrapperSlider>
               <Img src={agred} />
