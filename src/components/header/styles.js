@@ -49,6 +49,8 @@ export const Description = styled.h1`
   font-size: 18px;
   max-width: 330px;
   position: relative;
+  word-spacing: 5px;
+  letter-spacing: 0.09em;
 
   @media (min-width: 900px){
     max-width: 350px;
