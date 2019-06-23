@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { rotateAnimation } from './animations';
+import { rotateAnimation, leftRightAnimation } from './animations';
 
 export default createGlobalStyle`
     html {
@@ -159,4 +159,7 @@ export default createGlobalStyle`
     transform-origin: 407px 250px;
    
   } 
+  .leftRight {
+    ${leftRightAnimation};
+  }
 `;

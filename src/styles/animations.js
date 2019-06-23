@@ -30,3 +30,16 @@ const pulsar = keyframes`
 export const pulsarAnimation = (length, delay) => css`
   animation: ${pulsar} ${length} ${delay} linear infinite;
 `;
+
+const leftRight = keyframes`
+  from {
+    transform: translateX(0)
+  }
+  to {
+    transform: translateX(10px)
+  }
+`;
+
+export const leftRightAnimation = css`
+ animation: ${leftRight} 4s ease-in-out infinite alternate;
+`;
