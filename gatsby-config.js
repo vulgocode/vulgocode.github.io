@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Vulgocode',
-    description: 'agencia vulgocode',
+    title: 'Vulgocode agencia Web digital',
+    description: 'Agencia web de criação de sites, Landing pages e apps android e ios para pequenas empresa e profissional individuais a fim de garantir a eficiência dos processos de negócios de seus clientes criando ferramentas  tecnológicas, soluções e serviços de alta performance que se traduzem em qualidade, parceria.',
     author: '@alexandrer_stos',
     siteUrl: 'https://vulgocode.github.io',
+    lang: 'pt-BR',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -58,13 +59,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Vulgocode Agency Web',
+        name: 'Vulgocode agencia web digital',
         short_name: 'vulgocode',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

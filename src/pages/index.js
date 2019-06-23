@@ -41,7 +41,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Agencia Web" />
       <Header toggleModal={toggleModal} />
       <ServiceSection toggleModal={toggleModal} />
       <AboutSection toggleModal={toggleModal} />

@@ -4,6 +4,7 @@ const colors = {
   bgLight: '#f9f6fc',
   bg: '#efe7f7',
   gray: '#ccc',
+  pink: '#ff4dd1',
 
   primary: '#663399',
   secundary: '#005C4F', // #009688,
