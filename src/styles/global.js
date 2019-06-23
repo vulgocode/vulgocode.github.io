@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { rotateAnimation, leftRightAnimation } from './animations';
+import { rotateAnimation, leftRightAnimation, waveAnimation } from './animations';
 
 export default createGlobalStyle`
     html {
@@ -160,6 +160,12 @@ export default createGlobalStyle`
    
   } 
   .leftRight {
-    ${leftRightAnimation};
+    ${leftRightAnimation('')};
+  }  
+  .leftRight.d {
+    ${leftRightAnimation('2s')};
+  }
+  .wave {
+    ${waveAnimation('22s')}
   }
 `;

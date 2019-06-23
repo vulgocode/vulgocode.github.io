@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Vulgocode agencia Web digital',
+    title: 'Vulgocode Agência Web Digital',
     description: 'Agencia web de criação de sites, Landing pages e apps android e ios para pequenas empresa e profissional individuais a fim de garantir a eficiência dos processos de negócios de seus clientes criando ferramentas  tecnológicas, soluções e serviços de alta performance que se traduzem em qualidade, parceria.',
     author: '@alexandrer_stos',
     siteUrl: 'https://vulgocode.github.io',

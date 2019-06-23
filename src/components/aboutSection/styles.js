@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import { Container, Button } from '../../elements';
 
 export const Section = styled.section`
-
-background: ${({ theme }) => theme.colors.bgLight};
+  background: ${({ theme }) => theme.colors.bgLight};
 
    > ${Container}{
     display: flex;
@@ -57,7 +56,7 @@ export const Title = styled.h2`
   }
 
   &::after{
-    content: '';
+    content: '';    
     display: block;
     height: 5px;
     width: 50%;
