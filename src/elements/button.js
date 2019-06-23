@@ -9,9 +9,12 @@ export const Button = styled.button`
 
 
   border: ${({ ghost, theme }) => (ghost ? `2px solid ${theme.colors.primary}` : 'none')};
-  background: ${({ ghost, theme, email }) => (
+  background: ${({
+    ghost, theme, email, pink,
+  }) => (
     // eslint-disable-next-line no-mixed-operators
-    ghost && 'transparent' || email && '#3b5998' || theme.colors.secundary)};
+    ghost && 'transparent' || email && '#3b5998' || pink && theme.colors.pink || theme.colors.secundary)};
+    
   border-radius: 36px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   ${({ email }) => email && css`margin: 10px;`}

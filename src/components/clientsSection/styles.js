@@ -40,6 +40,6 @@ export const WrapperSlider = styled.div`
 
 
 export const Img = styled.img`
-height: 70px;
- 
+  height: 70px;
+  filter: invert(90%) opacity(.8); 
 `;

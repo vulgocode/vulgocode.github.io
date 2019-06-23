@@ -16,7 +16,7 @@ import asiaservice from '../../images/asiaservice.png';
 const ClientsSection = () => (
   <Section>
     <Container>
-      <Title>Quem já confia em nos</Title>
+      <Title>Quem já confia em nós</Title>
 
       <Media query="(min-width: 600px)">
         {isNotMobile => (
