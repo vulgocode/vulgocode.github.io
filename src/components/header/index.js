@@ -1,6 +1,5 @@
 import React from 'react';
 import Media from 'react-media';
-import PropTypes from 'prop-types';
 
 import { Container } from '../../elements';
 import {
@@ -10,14 +9,14 @@ import Navbar from '../navbar';
 
 import HeroSvg from '../../images/hero.inline.svg';
 
-const Header = ({ toggleModal }) => (
+const Header = () => (
   <HeaderStyles>
-    <Navbar toggleModal={toggleModal} />
+    <Navbar />
     <Container>
       <WrapHeaderline>
         <Headline>sua agência web</Headline>
         <Description>
-          Desenvolvimento de Websites, Landing Pages, Emails Marketing e muito mais!
+          Desenvolvimento Web e Mobile
         </Description>
       </WrapHeaderline>
 
@@ -27,9 +26,5 @@ const Header = ({ toggleModal }) => (
     </Container>
   </HeaderStyles>
 );
-
-Header.propTypes = {
-  toggleModal: PropTypes.func.isRequired,
-};
 
 export default Header;

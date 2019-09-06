@@ -8,6 +8,9 @@ export const HeaderStyles = styled.header`
   padding: 0 0 50px;
   background: #663399;
   color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: 600px) {  
     background: url(${bgHero}) calc(100% + 245px) top / 690px 550px no-repeat;
@@ -28,8 +31,10 @@ export const HeaderStyles = styled.header`
   }
 
     > ${Container}{
+      flex: 1;
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 `;
 

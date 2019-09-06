@@ -23,13 +23,13 @@ const ClientsSection = () => (
           <Carousel
             autoplay
             autoplayReverse
-            autoplayInterval={1000}
+            autoplayInterval={2500}
             wrapAround
             cellAlign="center"
             slidesToShow={!isNotMobile ? 2 : 3}
             initialSlideHeight={100}
             withoutControls
-            framePadding="50px 0px 100px"
+            framePadding="50px 0px 50px"
           >
             <WrapperSlider>
               <Img src={agred} alt="agencia red" />

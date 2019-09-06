@@ -9,19 +9,8 @@ export const Section = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-  } 
-
-  &::before {
-    content:'';
-    width: 100vw;
-    height: 10vw;
-    display: block;  
-    overflow: hidden;
-  }
-
-  &::before {
-    border-radius: 0% 0% 5% 100%;
-    background: ${({ theme }) => theme.colors.white};
+    padding-top: 100px;
+    padding-bottom: 100px;
   } 
 `;
 
@@ -53,16 +42,5 @@ export const Title = styled.h2`
 
   > p {
     margin-top: 20px;
-  }
-
-  &::after{
-    content: '';    
-    display: block;
-    height: 5px;
-    width: 50%;
-    position: absolute;
-    background-color: ${({ theme }) => theme.colors.primary};
-    margin: 10px 0 0 0; 
-    right: 0;
   }
 `;

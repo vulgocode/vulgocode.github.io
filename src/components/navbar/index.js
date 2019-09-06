@@ -2,22 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { HeaderStyles, Logo } from './styles';
-import { Button, Container } from '../../elements';
+import { Container } from '../../elements';
 
-const Navbar = ({ toggleModal }) => (
+const Navbar = ({ primary = false }) => (
   <HeaderStyles>
     <Container>
-      <Logo>
+      <Logo primary={primary}>
         Vulgo
         <span>code</span>
       </Logo>
-      <Button pink onClick={toggleModal}>Orçamento</Button>
     </Container>
   </HeaderStyles>
 );
 
 Navbar.propTypes = {
-  toggleModal: PropTypes.func.isRequired,
+  primary: PropTypes.bool,
+};
+
+Navbar.defaultProps = {
+  primary: false,
 };
 
 export default Navbar;

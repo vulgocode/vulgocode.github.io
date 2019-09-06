@@ -1,21 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
-import { Section, Title, Call } from './styles';
+import { Section, Title } from './styles';
 import { Container, Button } from '../../elements';
 
-const ContactSection = ({ toggleModal }) => (
+const ContactSection = () => (
   <Section>
     <Container>
-      <Title>Precisa de um orçamento para seu projeto</Title>
-      <Call>Click no Botão!</Call>
-      <Button ghost onClick={toggleModal}>Entre em contato</Button>
+      <Title>Precisa de um orçamento para seu projeto ?</Title>
+      <OutboundLink href="mailto:contato@vulgocode.com" target="_blank" rel="noopener noreferrer">
+        <Button email>contato@vulgocode.com</Button>
+      </OutboundLink>
+      <OutboundLink href="https://wa.me/5511977185120?text=Eu%20quero%20um%20orçamento" target="_blank" rel="noopener noreferrer">
+        <Button wp>
+            Whatsapp
+        </Button>
+      </OutboundLink>
     </Container>
   </Section>
 );
-
-ContactSection.propTypes = {
-  toggleModal: PropTypes.func.isRequired,
-};
 
 export default ContactSection;

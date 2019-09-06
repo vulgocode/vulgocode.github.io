@@ -1,14 +1,13 @@
 /* eslint-disable max-len */
 import React from 'react';
 import Media from 'react-media';
-import PropTypes from 'prop-types';
 
 import { Section, WrapperAbout, Title } from './styles';
-import { Container, Button } from '../../elements';
+import { Container } from '../../elements';
 
 import AboutSvg from '../../images/about.inline.svg';
 
-const AboutSection = ({ toggleModal }) => (
+const AboutSection = () => (
   <Section>
     <Container>
       <Media query="(min-width: 600px)">
@@ -27,14 +26,9 @@ const AboutSection = ({ toggleModal }) => (
           <br />
           Além da criação de sites e da criação de blogs personalizados, o que nos torna uma agência Web completa é o nosso leque de Serviços voltados para o seu site, como Consultoria em Google Ads (Links patrocinados) e SEO - Otimização de sites.
         </p>
-        <Button onClick={toggleModal}>Orçamento</Button>
       </WrapperAbout>
     </Container>
   </Section>
 );
-
-AboutSection.propTypes = {
-  toggleModal: PropTypes.func.isRequired,
-};
 
 export default AboutSection;

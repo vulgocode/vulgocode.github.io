@@ -6,21 +6,21 @@ import {
   Layout,
   SEO,
   Footer,
+  Navbar,
 } from '../components';
 
 const Main = styled.main`
+  width: 100%;
+  max-width: 960px;
   min-height: 100%;
-  padding: 70px 20px;
-
-  @media (min-width: 600px){
-    padding: 100px 50px;
-
-  }
+  padding: 20px;
+  margin: auto; 
 `;
 
-const IndexPage = () => (
+const PrivacyPolicy = () => (
   <Layout>
     <SEO title="Privacy Policy" />
+    <Navbar primary />
     <Main>
       <h3>Privacy policy:</h3>
       <p>This Privacy Policy defines how Vulgocode team collect and use users personal and non-personal information and data in our mobile applications (available for smart phones and tablets) and on our website.</p>
@@ -43,5 +43,4 @@ const IndexPage = () => (
   </Layout>
 );
 
-
-export default IndexPage;
+export default PrivacyPolicy;

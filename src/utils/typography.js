@@ -6,12 +6,12 @@ const typography = new Typography({
   scaleRatio: 2,
   headerFontFamily: ['Roboto', 'sans-serif'],
   bodyFontFamily: ['Monteserrat', 'sans-serif'],
-  headerGray: 50,
+  headerGray: 80,
   headerGrayHue: 'warn',
   googleFonts: [
     {
       name: 'Roboto',
-      styles: ['700', '400'],
+      styles: ['400'],
     },
     {
       name: 'Monteserrat',
