@@ -11,6 +11,7 @@ export default createGlobalStyle`
     color: ${({ theme }) => theme.colors.white};  
     font-size: 16px;
     font-family: sans-serif;
+    user-select: none;
   }
   h3 {
     font-size: 30px;
