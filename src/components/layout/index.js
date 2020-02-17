@@ -7,10 +7,8 @@ import theme from '../../styles/theme';
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <>
-      <GlobalStyles />
-      {children}
-    </>
+    <GlobalStyles />
+    {children}
   </ThemeProvider>
 );
 
