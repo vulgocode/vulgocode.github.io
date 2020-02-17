@@ -16,6 +16,10 @@ const Main = styled.main`
   flex-direction: column;
 `;
 
+const Headline = styled.p`
+  font-family: monospace;
+`;
+
 const Share = styled.div`
   margin-top: 30px;
   width: 100%;
@@ -35,40 +39,43 @@ const Share = styled.div`
   }
 `;
 
+const Links = [
+  {
+    Link: 'https://instagr.am/vulgocode',
+    icon: <Instagram />,
+  },
+  {
+    Link: 'https://fb.me/vulgocode.github.io',
+    icon: <Facebook />,
+  },
+  {
+    Link: 'https://wa.me/5511977185120',
+    icon: <Whatsapp />,
+  },
+  {
+    Link: 'mailto:contato@vulgocode.com',
+    icon: <Email />,
+  },
+];
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Agencia Web" />
     <Main>
       <Logo />
+      <Headline>Código feito para durar.</Headline>
       <Share>
-        <a
-          href="https://instagr.am/vulgocode"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Instagram />
-        </a>
-        <a
-          href="https://fb.me/vulgocode.github.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Facebook />
-        </a>
-        <a
-          href="https://wa.me/5511977185120"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Whatsapp />
-        </a>
-        <a
-          href="mailto:contato@vulgocode.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Email />
-        </a>
+        {Links.map(({ link, icon }, index) => (
+          <a
+            // eslint-disable-next-line react/no-array-index-key
+            key={index}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {icon}
+          </a>
+        ))}
       </Share>
     </Main>
   </Layout>
